@@ -1,11 +1,20 @@
 package sample;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 
-public class Controller {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class Controller implements Initializable{
     public Label Counter;
-    private static int counter;
+    private int counter;
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        counter = 0;
+    }
 
     public void SayHello(ActionEvent actionEvent) {
         counter++;
