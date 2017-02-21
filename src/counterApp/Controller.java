@@ -1,4 +1,4 @@
-package sample;
+package counterApp;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
